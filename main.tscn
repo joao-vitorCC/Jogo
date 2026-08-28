@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dvyu66bppu21h"]
+
+[ext_resource type="Script" uid="uid://diclddljyjh0k" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://bjha6orccbdfv" path="res://camada_1.tscn" id="1_ig7tw"]
+
+[node name="main" type="Node2D" unique_id=1328296121]
+script = ExtResource("1_0xm2m")
+
+[node name="world" type="Node2D" parent="." unique_id=2103075679]
+
+[node name="map" type="Node2D" parent="world" unique_id=1003652381]
+position = Vector2(1, 1)
+
+[node name="camada1" parent="world/map" unique_id=45216682 instance=ExtResource("1_ig7tw")]
