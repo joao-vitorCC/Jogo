@@ -1,10 +1,16 @@
 [gd_scene format=3 uid="uid://dvyu66bppu21h"]
 
+<<<<<<< HEAD
 [ext_resource type="Script" uid="uid://diclddljyjh0k" path="res://main.gd" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://bjha6orccbdfv" path="res://camada_1.tscn" id="1_ig7tw"]
 
 [node name="main" type="Node2D" unique_id=1328296121]
 script = ExtResource("1_0xm2m")
+=======
+[ext_resource type="PackedScene" uid="uid://bjha6orccbdfv" path="res://camada_1.tscn" id="1_ig7tw"]
+
+[node name="main" type="Node2D" unique_id=1328296121]
+>>>>>>> 1bb3731efccd01251d5fbe142b6a09f9f09d1eea
 
 [node name="world" type="Node2D" parent="." unique_id=2103075679]
 
