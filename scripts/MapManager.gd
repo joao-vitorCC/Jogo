@@ -39,6 +39,28 @@ func damage_habitat(position: Vector2i, amount: float):
 	cell.damage_habitat(amount)
 	cell_changed.emit(position)
 
+func restore_habitat(position: Vector2i,amount: float):
+	var cell = get_cell(position)
+	if cell == null:
+		return
+	cell.restore_habitat(amount)
+	cell_changed.emit(position)
+
+func set_fire(position: Vector2i):
+	var cell = get_cell(position)
+	if cell == null:
+		return
+	cell.on_fire = true
+	cell.damage_habitat(20)
+	cell_changed.emit(position)
+	
+func protected_area(position: Vector2i):
+	var cell = get_cell(position)
+	if cell == null:
+		return
+	cell.protected_area = true
+	cell_changed.emit(position)
+	
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
