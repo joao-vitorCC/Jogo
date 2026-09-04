@@ -2,6 +2,9 @@
 
 [ext_resource type="Script" uid="uid://diclddljyjh0k" path="res://scripts/main.gd" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://bjha6orccbdfv" path="res://camada_1.tscn" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://sk0gwhgd3l0r" path="res://scripts/MapManager.gd" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://b53wch8wp1w7n" path="res://tree.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://dx4bda01boy45" path="res://fumaca.tscn" id="5_lquwl"]
 
 [node name="main" type="Node2D" unique_id=1328296121]
 script = ExtResource("1_0xm2m")
@@ -12,3 +15,23 @@ script = ExtResource("1_0xm2m")
 position = Vector2(1, 1)
 
 [node name="camada1" parent="world/map" unique_id=45216682 instance=ExtResource("1_ig7tw")]
+texture_filter = 1
+script = ExtResource("3_h2yge")
+
+[node name="tree" parent="world/map/camada1" unique_id=1957349731 instance=ExtResource("4_1bvp3")]
+position = Vector2(-130, 55)
+
+[node name="tree2" parent="world/map/camada1" unique_id=80159500 instance=ExtResource("4_1bvp3")]
+position = Vector2(-54, -43)
+
+[node name="tree3" parent="world/map/camada1" unique_id=1334233745 instance=ExtResource("4_1bvp3")]
+position = Vector2(-162, -70)
+
+[node name="tree4" parent="world/map/camada1" unique_id=1908079777 instance=ExtResource("4_1bvp3")]
+position = Vector2(-49, 33)
+
+[node name="fumaca" parent="world/map" unique_id=1959769899 instance=ExtResource("5_lquwl")]
+position = Vector2(723, 449)
+
+[node name="fumaca2" parent="world/map" unique_id=1417141001 instance=ExtResource("5_lquwl")]
+position = Vector2(758, 457)
