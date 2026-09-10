@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3aa0d3c4ca204b5698e26b20c811511928a08178
 extends Node
 
 signal population_changed(species_id, population)
@@ -55,7 +58,10 @@ func create_species():
 			120
 		)
 	)
+<<<<<<< HEAD
 	print(species)
+=======
+>>>>>>> 3aa0d3c4ca204b5698e26b20c811511928a08178
 
 
 func add_species(data: SpeciesData):

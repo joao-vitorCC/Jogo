@@ -1,11 +1,18 @@
+<<<<<<< HEAD
 
+=======
+class_name MapManager
+>>>>>>> 3aa0d3c4ca204b5698e26b20c811511928a08178
 extends Node
 
 signal cell_changed(position)
 const WIDTH := 10
 const HEIGHT := 8
 var grid: Array = []
+<<<<<<< HEAD
 @onready var GameManager = $GameManager
+=======
+>>>>>>> 3aa0d3c4ca204b5698e26b20c811511928a08178
 
 func create_grid():
 	grid.clear()
@@ -14,6 +21,10 @@ func create_grid():
 		for x in range(WIDTH):
 			var cell := CellData.new(Vector2i(x,y))
 			row.append(cell)
+<<<<<<< HEAD
+=======
+			print(x,y)
+>>>>>>> 3aa0d3c4ca204b5698e26b20c811511928a08178
 		grid.append(row)
 		
 func is_valid_cell(position: Vector2i)->bool:
@@ -64,7 +75,11 @@ func protected_area(position: Vector2i):
 	
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+<<<<<<< HEAD
 	pass
+=======
+	create_grid()
+>>>>>>> 3aa0d3c4ca204b5698e26b20c811511928a08178
 	
 
 

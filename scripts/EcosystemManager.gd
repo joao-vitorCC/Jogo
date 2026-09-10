@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3aa0d3c4ca204b5698e26b20c811511928a08178
 extends Node
 
 signal biodiversity_changed(value)
@@ -28,7 +31,11 @@ func calculate_biodiversity() -> float:
 	biodiversity_changed.emit(
 		biodiversity
 	)
+<<<<<<< HEAD
 	print("bio ",biodiversity)
+=======
+
+>>>>>>> 3aa0d3c4ca204b5698e26b20c811511928a08178
 	return biodiversity
 
 

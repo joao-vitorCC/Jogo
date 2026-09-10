@@ -9,7 +9,10 @@ var resources: int = INITIAL_RESOURCES
 
 func reset():
 	resources = INITIAL_RESOURCES
+<<<<<<< HEAD
 	print("resources: ",resources)
+=======
+>>>>>>> 3aa0d3c4ca204b5698e26b20c811511928a08178
 	resources_changed.emit(resources)
 
 

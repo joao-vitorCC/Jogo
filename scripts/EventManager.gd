@@ -11,7 +11,11 @@ func generate_event():
 		0,
 		3
 	)
+<<<<<<< HEAD
 	print("evento ",event_id)
+=======
+
+>>>>>>> 3aa0d3c4ca204b5698e26b20c811511928a08178
 	match event_id:
 
 		0:
