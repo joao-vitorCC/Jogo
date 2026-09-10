@@ -15,7 +15,6 @@ run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
-<<<<<<< HEAD
 [autoload]
 
 TurnManager="*uid://d1x8b70rybmlq"
@@ -25,22 +24,18 @@ MessageManager="*uid://dqho5x2kuvd2"
 MapManager="*uid://sk0gwhgd3l0r"
 ResourceManager="*uid://2b40b1vlucrl"
 EventManager="*uid://dmxkolihgj4m5"
+DialogManager="*uid://1hrsscf0wqul"
 
-=======
->>>>>>> 3aa0d3c4ca204b5698e26b20c811511928a08178
 [display]
 
 window/size/mode=2
 window/stretch/mode="viewport"
 window/stretch/aspect="ignore"
 
-<<<<<<< HEAD
 [dotnet]
 
 project/assembly_name="jogo"
 
-=======
->>>>>>> 3aa0d3c4ca204b5698e26b20c811511928a08178
 [physics]
 
 3d/physics_engine="Jolt Physics"

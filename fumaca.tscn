@@ -49,11 +49,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"default",
-<<<<<<< HEAD
 "speed": 1.5
-=======
-"speed": 1.0
->>>>>>> 3aa0d3c4ca204b5698e26b20c811511928a08178
 }]
 
 [node name="fumaca" type="AnimatedSprite2D" unique_id=1959769899]

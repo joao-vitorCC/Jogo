@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://derk4x3t1c0s1"]
 
+[ext_resource type="Script" uid="uid://3ex34d4eytrk" path="res://dialogue_box.gd" id="1_n23yb"]
 [ext_resource type="Texture2D" uid="uid://blsu847c0qtw8" path="res://Assets/pop up window.png" id="1_senjy"]
 
 [node name="dialogBox" type="MarginContainer" unique_id=648940894]
+process_mode = 3
 anchors_preset = -1
 anchor_left = 0.485
 anchor_top = 0.469
@@ -14,6 +16,7 @@ offset_right = 140.41595
 offset_bottom = -22.588013
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_n23yb")
 
 [node name="bgDialogBox" type="NinePatchRect" parent="." unique_id=1878871772]
 layout_mode = 2
