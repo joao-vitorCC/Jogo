@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://dx4bda01boy45"]
+
+[ext_resource type="Texture2D" uid="uid://ctybw8yjrffnd" path="res://Assets/particles/smokeeffect_begin_48x64.png" id="1_buglj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vkrob"]
+atlas = ExtResource("1_buglj")
+region = Rect2(0, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nlr30"]
+atlas = ExtResource("1_buglj")
+region = Rect2(48, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_arqhj"]
+atlas = ExtResource("1_buglj")
+region = Rect2(96, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_45aif"]
+atlas = ExtResource("1_buglj")
+region = Rect2(144, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mmkty"]
+atlas = ExtResource("1_buglj")
+region = Rect2(192, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x7r1r"]
+atlas = ExtResource("1_buglj")
+region = Rect2(240, 0, 48, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m13ap"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vkrob")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nlr30")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_arqhj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_45aif")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mmkty")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x7r1r")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 1.5
+}]
+
+[node name="fumaca" type="AnimatedSprite2D" unique_id=1959769899]
+sprite_frames = SubResource("SpriteFrames_m13ap")
+autoplay = "default"
+frame_progress = 0.54623026

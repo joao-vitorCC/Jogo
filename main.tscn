@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://dvyu66bppu21h"]
+
+[ext_resource type="Script" uid="uid://bbwi45g1konp6" path="res://scripts/main.gd" id="1_cegan"]
+[ext_resource type="PackedScene" uid="uid://bjha6orccbdfv" path="res://camada_1.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://b53wch8wp1w7n" path="res://tree.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://b81evqoaxpr0q" path="res://arvore2.tscn" id="4_4c57u"]
+[ext_resource type="PackedScene" uid="uid://yjtijqs0cym1" path="res://tree3.tscn" id="5_efxa6"]
+[ext_resource type="PackedScene" uid="uid://dx4bda01boy45" path="res://fumaca.tscn" id="5_lquwl"]
+[ext_resource type="PackedScene" uid="uid://ylx1vqkha1q" path="res://onca.tscn" id="6_7mycd"]
+[ext_resource type="PackedScene" uid="uid://430hf21ryho7" path="res://tree4.tscn" id="6_ycdy4"]
+[ext_resource type="PackedScene" uid="uid://b0eq1bj5w6j86" path="res://guara.tscn" id="7_272bh"]
+[ext_resource type="PackedScene" uid="uid://c8we108r4qvj4" path="res://tree5.tscn" id="7_w48qg"]
+[ext_resource type="PackedScene" uid="uid://bxpeqy2jio86m" path="res://anta.tscn" id="8_5vw27"]
+[ext_resource type="PackedScene" uid="uid://tv8e1ekr4sy" path="res://tree6.tscn" id="8_w48qg"]
+[ext_resource type="PackedScene" uid="uid://dwt2bd66md3s4" path="res://caoVinagre.tscn" id="9_kek77"]
+[ext_resource type="PackedScene" uid="uid://bqmdk5p5mtblf" path="res://tree7.tscn" id="9_yaehf"]
+[ext_resource type="PackedScene" uid="uid://t6jm2o5rt2l7" path="res://cervo.tscn" id="10_4c57u"]
+[ext_resource type="PackedScene" uid="uid://ujs73qqwu3yr" path="res://tree8.tscn" id="10_074og"]
+[ext_resource type="PackedScene" uid="uid://dksrxv5wrtxql" path="res://tree9.tscn" id="11_cegan"]
+[ext_resource type="PackedScene" uid="uid://mxfbmy5m8bo1" path="res://tree10.tscn" id="12_074og"]
+[ext_resource type="Script" uid="uid://dmlwrp8runl66" path="res://scripts/GameManager.gd" id="18_074og"]
+[ext_resource type="PackedScene" uid="uid://derk4x3t1c0s1" path="res://dialogue_box.tscn" id="20_82xsv"]
+
+[node name="main" type="Node2D" unique_id=84573958]
+script = ExtResource("1_cegan")
+
+[node name="world" type="Node2D" parent="." unique_id=2103075679]
+
+[node name="map" type="Node2D" parent="world" unique_id=1003652381]
+position = Vector2(1, 1)
+
+[node name="layer1" parent="world/map" unique_id=45216682 instance=ExtResource("1_ig7tw")]
+texture_filter = 1
+
+[node name="tree" parent="world/map/layer1" unique_id=1957349731 instance=ExtResource("4_1bvp3")]
+position = Vector2(-130, 55)
+
+[node name="tree2" parent="world/map/layer1" unique_id=760594119 instance=ExtResource("4_4c57u")]
+position = Vector2(187, 40)
+
+[node name="tree3" parent="world/map/layer1" unique_id=1967651302 instance=ExtResource("5_efxa6")]
+position = Vector2(202, 150)
+
+[node name="tree4" parent="world/map/layer1" unique_id=814731938 instance=ExtResource("6_ycdy4")]
+position = Vector2(383, 52)
+
+[node name="tree5" parent="world/map/layer1" unique_id=422008418 instance=ExtResource("7_w48qg")]
+position = Vector2(407, 172)
+
+[node name="tree6" parent="world/map/layer1" unique_id=1743140094 instance=ExtResource("8_w48qg")]
+position = Vector2(490, 256)
+
+[node name="tree7" parent="world/map/layer1" unique_id=371457201 instance=ExtResource("9_yaehf")]
+position = Vector2(296, 369)
+
+[node name="tree8" parent="world/map/layer1" unique_id=427867129 instance=ExtResource("10_074og")]
+position = Vector2(459, 416)
+
+[node name="tree9" parent="world/map/layer1" unique_id=169186583 instance=ExtResource("11_cegan")]
+position = Vector2(135, 320)
+
+[node name="tree10" parent="world/map/layer1" unique_id=267425027 instance=ExtResource("12_074og")]
+position = Vector2(231, 455)
+
+[node name="smoke" parent="world/map" unique_id=1959769899 instance=ExtResource("5_lquwl")]
+position = Vector2(723, 449)
+
+[node name="smoke2" parent="world/map" unique_id=1417141001 instance=ExtResource("5_lquwl")]
+position = Vector2(758, 457)
+
+[node name="onca" parent="world/map" unique_id=505912184 instance=ExtResource("6_7mycd")]
+position = Vector2(93, 106)
+
+[node name="guara" parent="world/map" unique_id=1898833369 instance=ExtResource("7_272bh")]
+position = Vector2(285, 92)
+
+[node name="anta" parent="world/map" unique_id=180678229 instance=ExtResource("8_5vw27")]
+position = Vector2(137, 420)
+
+[node name="caoVinagre" parent="world/map" unique_id=554072792 instance=ExtResource("9_kek77")]
+position = Vector2(371, 247)
+
+[node name="cervo" parent="world/map" unique_id=220170746 instance=ExtResource("10_4c57u")]
+position = Vector2(362, 437)
+
+[node name="Controller" type="Node2D" parent="." unique_id=1787290021]
+
+[node name="GameManager" type="Node" parent="Controller" unique_id=1773917049]
+script = ExtResource("18_074og")
+
+[node name="UI" type="Node" parent="." unique_id=1858313584]
+
+[node name="dialogBox" parent="UI" unique_id=648940894 instance=ExtResource("20_82xsv")]
+anchor_left = 0.095000006
+anchor_top = 0.83500004
+anchor_right = 0.33100003
+anchor_bottom = 0.96500003
+offset_left = -0.44001007
+offset_top = -0.08001709
+offset_right = -0.31204224
+offset_bottom = -0.32000732
+grow_horizontal = 1
+grow_vertical = 0

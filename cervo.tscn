@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://t6jm2o5rt2l7"]
+
+[ext_resource type="Texture2D" uid="uid://0ijrthl06dtx" path="res://Assets/cervo.png" id="1_xo8pk"]
+
+[node name="Sprite2D" type="Sprite2D" unique_id=220170746]
+texture = ExtResource("1_xo8pk")

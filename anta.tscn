@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bxpeqy2jio86m"]
+
+[ext_resource type="Texture2D" uid="uid://bdqvj862udotx" path="res://Assets/anta.png" id="1_qg3cn"]
+
+[node name="Sprite2D" type="Sprite2D" unique_id=180678229]
+texture = ExtResource("1_qg3cn")

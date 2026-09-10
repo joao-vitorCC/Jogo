@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://ylx1vqkha1q"]
+
+[ext_resource type="Texture2D" uid="uid://brukebwl7g6k5" path="res://Assets/onca.png" id="1_dxfmx"]
+
+[node name="Sprite2D" type="Sprite2D" unique_id=505912184]
+texture = ExtResource("1_dxfmx")

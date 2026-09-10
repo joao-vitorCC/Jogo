@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dwt2bd66md3s4"]
+
+[ext_resource type="Texture2D" uid="uid://cw42w557a3odv" path="res://Assets/caoVinagre.png" id="1_rh82p"]
+
+[node name="Sprite2D" type="Sprite2D" unique_id=554072792]
+texture = ExtResource("1_rh82p")
