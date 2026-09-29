@@ -1,5 +1,5 @@
 extends Node
-
+signal event
 var random := RandomNumberGenerator.new()
 
 
@@ -9,9 +9,10 @@ func generate_event():
 
 	var event_id := random.randi_range(
 		0,
-		3
+		0
 	)
-
+	print("evento ",event_id)
+	event.emit()
 	match event_id:
 
 		0:
@@ -28,7 +29,7 @@ func generate_event():
 
 
 func fire_event():
-
+	
 	var position := Vector2i(
 		random.randi_range(
 			0,
@@ -41,7 +42,7 @@ func fire_event():
 	)
 
 	MapManager.set_fire(position)
-
+	
 	MessageManager.show_message(
 		"🔥 Incêndio",
 		"Um incêndio foi detectado no mapa."

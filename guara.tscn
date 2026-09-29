@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b0eq1bj5w6j86"]
+
+[ext_resource type="Texture2D" uid="uid://bq61jcdlvpkgg" path="res://Assets/guara.png" id="1_pmn2a"]
+
+[node name="Sprite2D" type="Sprite2D" unique_id=1898833369]
+texture = ExtResource("1_pmn2a")

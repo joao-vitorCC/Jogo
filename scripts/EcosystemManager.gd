@@ -1,3 +1,4 @@
+
 extends Node
 
 signal biodiversity_changed(value)
@@ -27,7 +28,7 @@ func calculate_biodiversity() -> float:
 	biodiversity_changed.emit(
 		biodiversity
 	)
-
+	print("bio ",biodiversity)
 	return biodiversity
 
 

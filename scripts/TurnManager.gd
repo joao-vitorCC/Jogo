@@ -1,4 +1,4 @@
-class_name TurnManager
+
 extends Node
 
 signal turn_started(turn)
@@ -9,7 +9,8 @@ const MAX_TURNS := 10
 
 func reset():
 	turn = 1
-
+	print("turno",turn)
+	
 func start_turn():
 	turn_started.emit(turn)
 	
@@ -22,12 +23,3 @@ func is_last_turn()->bool:
 	
 func get_turn()->int:
 	return turn
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass

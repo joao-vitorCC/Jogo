@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://derk4x3t1c0s1"]
+
+[ext_resource type="Script" uid="uid://3ex34d4eytrk" path="res://scripts/dialog_box.gd" id="1_n23yb"]
+[ext_resource type="Texture2D" uid="uid://blsu847c0qtw8" path="res://Assets/pop up window.png" id="1_senjy"]
+[ext_resource type="Script" uid="uid://b02qkjrp7ktiy" path="res://scripts/recuperacao_parcial.gd" id="3_cjsg4"]
+[ext_resource type="PackedScene" uid="uid://c7yu7h24cwft0" path="res://recuperacao_total.tscn" id="4_8d3xf"]
+[ext_resource type="Script" uid="uid://cqml5q38jsra" path="res://scripts/ignorar.gd" id="5_8d3xf"]
+
+[node name="dialog_box" type="MarginContainer" unique_id=648940894]
+process_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_right = 500.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_n23yb")
+
+[node name="bgDialogBox" type="NinePatchRect" parent="." unique_id=1878871772]
+layout_mode = 2
+texture = ExtResource("1_senjy")
+region_rect = Rect2(0, 0, 960, 640)
+
+[node name="textContainer" type="MarginContainer" parent="bgDialogBox" unique_id=71104018]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -63.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 14
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 14
+
+[node name="textLabel" type="RichTextLabel" parent="bgDialogBox/textContainer" unique_id=1762862636]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_font_sizes/normal_font_size = 28
+text = "safsfasfssasdasd"
+fit_content = true
+tab_size = 10
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="HBoxContainer" parent="bgDialogBox" unique_id=302343609]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.22
+anchor_top = 0.675
+anchor_right = 0.22
+anchor_bottom = 0.675
+offset_right = 280.0
+offset_bottom = 54.0
+grow_horizontal = 2
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="RecuperacaoParcial" type="Button" parent="bgDialogBox/VBoxContainer" unique_id=1418189226]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 2
+text = "Recuperaço
+Parcial"
+script = ExtResource("3_cjsg4")
+
+[node name="RecuperacaoTotal" parent="bgDialogBox/VBoxContainer" unique_id=1948645944 instance=ExtResource("4_8d3xf")]
+layout_mode = 2
+
+[node name="Ignorar" type="Button" parent="bgDialogBox/VBoxContainer" unique_id=1623205966]
+texture_filter = 1
+layout_mode = 2
+text = "Ignorar"
+script = ExtResource("5_8d3xf")
+
+[connection signal="pressed" from="bgDialogBox/VBoxContainer/RecuperacaoParcial" to="bgDialogBox/VBoxContainer/RecuperacaoParcial" method="_on_pressed"]
+[connection signal="pressed" from="bgDialogBox/VBoxContainer/RecuperacaoTotal" to="." method="_on_recuperacao_total_pressed"]
+[connection signal="pressed" from="bgDialogBox/VBoxContainer/Ignorar" to="bgDialogBox/VBoxContainer/Ignorar" method="_on_pressed"]

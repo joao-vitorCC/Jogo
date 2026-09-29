@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://banpp4vq16jf6"]
+
+[ext_resource type="Script" uid="uid://crhaqdsnanvbe" path="res://dialog_box_screen.gd" id="1_q8y34"]
+
+[node name="dialog_box_screen" type="Node2D" unique_id=273497323]
+script = ExtResource("1_q8y34")
+textToDisplay = Array[String](["EVENTO", "TESTE"])

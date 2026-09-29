@@ -9,6 +9,7 @@ var resources: int = INITIAL_RESOURCES
 
 func reset():
 	resources = INITIAL_RESOURCES
+	print("resources: ",resources)
 	resources_changed.emit(resources)
 
 

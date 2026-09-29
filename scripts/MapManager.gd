@@ -1,10 +1,11 @@
-class_name MapManager
+
 extends Node
 
 signal cell_changed(position)
 const WIDTH := 10
 const HEIGHT := 8
 var grid: Array = []
+@onready var GameManager = $GameManager
 
 func create_grid():
 	grid.clear()
@@ -13,7 +14,6 @@ func create_grid():
 		for x in range(WIDTH):
 			var cell := CellData.new(Vector2i(x,y))
 			row.append(cell)
-			print(x,y)
 		grid.append(row)
 		
 func is_valid_cell(position: Vector2i)->bool:
@@ -64,7 +64,7 @@ func protected_area(position: Vector2i):
 	
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	create_grid()
+	pass
 	
 
 

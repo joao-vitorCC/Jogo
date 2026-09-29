@@ -1,3 +1,4 @@
+
 extends Node
 
 signal population_changed(species_id, population)
@@ -21,18 +22,18 @@ func create_species():
 
 	add_species(
 		SpeciesData.new(
-			"tamandua",
-			"Tamanduá-bandeira",
-			"Myrmecophaga tridactyla",
+			"anta",
+			"Anta",
+			"Tapirus terrestris",
 			90
 		)
 	)
 
 	add_species(
 		SpeciesData.new(
-			"tatu",
-			"Tatu-canastra",
-			"Priodontes maximus",
+			"veado",
+			"Veado-campeiro",
+			"Ozotoceros bezoarticus",
 			70
 		)
 	)
@@ -40,20 +41,21 @@ func create_species():
 	add_species(
 		SpeciesData.new(
 			"onca",
-			"Onça-parda",
-			"Puma concolor",
-			60
+			"Onça-pintada",
+			"Panthera onca",
+			100
 		)
 	)
 
 	add_species(
 		SpeciesData.new(
-			"seriema",
-			"Seriema",
-			"Cariama cristata",
+			"cao",
+			"Cao-vinagre",
+			"Speothos venaticus",
 			120
 		)
 	)
+	print(species)
 
 
 func add_species(data: SpeciesData):

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c7yu7h24cwft0"]
+
+[ext_resource type="Script" uid="uid://ut1apimsy4tf" path="res://scripts/recuperacao_total.gd" id="1_c7hg3"]
+
+[node name="RecuperacaoTotal" type="Button" unique_id=1948645944]
+texture_filter = 1
+texture_repeat = 1
+text = "Recuperação
+Total"
+script = ExtResource("1_c7hg3")

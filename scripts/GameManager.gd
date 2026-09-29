@@ -1,7 +1,11 @@
+class_name GameManager
 extends Node
+
+
 
 signal game_started
 signal game_finished
+@onready var turn_manage = $TurnManager
 
 var game_running := false
 
