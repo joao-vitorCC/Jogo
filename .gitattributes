@@ -1,2 +1,19 @@
-# Normalize EOL for all files that Git considers text files.
-* text=auto eol=lf
+# Tratar arquivos de configuração e texto da Godot com finais de linha estritos
+*.godot text eol=lf
+*.gd text eol=lf
+
+# Impedir o Git de tentar fazer merge automático em cenas, recursos e IDs únicos.
+# O parâmetro 'binary' força o Git a pedir sua decisão manual em vez de misturar as linhas.
+*.tscn binary
+*.tres binary
+*.uid binary
+*.import binary
+
+# Arquivos de mídia e assets sempre como binários
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.svg binary
+*.wav binary
+*.ogg binary
+
